@@ -1,0 +1,75 @@
+{
+    "definitions": {
+        "Welcome7": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "success": {
+                    "type": "boolean"
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
+                }
+            },
+            "required": [
+                "data",
+                "message",
+                "status",
+                "success"
+            ],
+            "title": "Welcome7"
+        },
+        "Datum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "completed": {
+                    "type": "boolean"
+                },
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "user_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "category",
+                "completed",
+                "created_at",
+                "description",
+                "id",
+                "title",
+                "updated_at",
+                "user_id"
+            ],
+            "title": "Datum"
+        }
+    }
+}
