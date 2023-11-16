@@ -41,7 +41,7 @@ This repository contains a robust automated testing framework built from scratch
 #Getting Started
 To set up the environment and run the tests locally, follow these steps:
 
-1. Clone the repository: git clone https://github.com/RobertBeraru/Automatedtestingframework.git
+1. Clone the repository: git clone https://github.com/RobertBeraru/Automated-Testing-Framework.git
 2. Install dependencies: npm install
 3. Run API tests: npm run test
 4. Run web tests: npm run cy:web
