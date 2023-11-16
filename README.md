@@ -38,7 +38,7 @@ This repository contains a robust automated testing framework built from scratch
 -Stylish and informative test reports generated using Mocha Awesome.
 -Visual representation of test results, including detailed information on test cases and execution history.
 
-#Getting Started
+## Getting Started
 To set up the environment and run the tests locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/RobertBeraru/Automated-Testing-Framework.git
