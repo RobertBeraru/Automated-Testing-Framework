@@ -2,16 +2,16 @@ class MiddlePageMenu {
   getRegisterAccountContinueBtn() {
     return cy.get(".btn.btn-orange.pull-right").contains("Continue");
   }
-  getLoginNameFieldReturningCustomer(){
+  getLoginNameFieldReturningCustomer() {
     return cy.get("#loginFrm_loginname");
   }
-  getLoginPasswordFieldReturningCustomer(){
+  getLoginPasswordFieldReturningCustomer() {
     return cy.get("#loginFrm_password");
   }
-  getSuccessStatus(){
+  getSuccessStatus() {
     return cy.get(".alert.alert-success");
   }
-  getLoginBtn(){
+  getLoginBtn() {
     return cy.get(".btn.btn-orange.pull-right").contains("Login");
   }
   getFirstNameField() {
@@ -62,30 +62,29 @@ class MiddlePageMenu {
   getPrivacyPolicyBtn() {
     return cy.get("#AccountFrm_agree");
   }
-  getEditAccountDetailsBtn(){
+  getEditAccountDetailsBtn() {
     return cy.get("i[class='fa fa-edit']");
   }
-  getAccountLogoutStatus(){
+  getAccountLogoutStatus() {
     return cy.get(".maintext").contains("Account Logout");
   }
-  getLogoffDashbordBtn(){
+  getLogoffDashbordBtn() {
     return cy.get("div[id='maincontainer'] li:nth-child(10) a:nth-child(1)");
   }
-  getLogoffDropDownMenuBtn(){
-    return cy.get (".fa.fa-lock.fa-fw");
+  getLogoffDropDownMenuBtn() {
+    return cy.get(".fa.fa-lock.fa-fw");
   }
-  getSkinSheenBronzerStick(){
+  getSkinSheenBronzerStick() {
     return cy.get('#featured.row.mt20 a[data-id="50"].productcart');
   }
-  getCheckoutBtn(){
-    return cy.get("#cart_checkout1")
+  getCheckoutBtn() {
+    return cy.get("#cart_checkout1");
   }
-  getConfirmOrder(){
-    return cy.get("#checkout_btn")
+  getConfirmOrder() {
+    return cy.get("#checkout_btn");
   }
-  getYourOrderHasBeenProccessedStatus(){
-    return cy.get(".maintext").contains( "Your Order Has Been Processed!")
+  getYourOrderHasBeenProccessedStatus() {
+    return cy.get(".maintext").contains("Your Order Has Been Processed!");
   }
 }
 export default new MiddlePageMenu();
-

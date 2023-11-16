@@ -33,6 +33,6 @@ describe("Post notes test suite", () => {
       .post(baseURL + "/notes")
       .withHeaders("x-auth-token", authToken)
       .withBody(notesBody)
-      .expectStatus(200)
+      .expectStatus(200);
   });
 });
