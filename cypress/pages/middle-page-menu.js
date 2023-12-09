@@ -48,7 +48,7 @@ class MiddlePageMenu {
     return cy.get("#AccountFrm_country_id.form-control");
   }
   getLoginNameField() {
-    return cy.get("#AccountFrm_loginname");
+    return cy.get("#AccountFrm_baseURLloginname");
   }
   getPasswordField() {
     return cy.get("#AccountFrm_password");
@@ -85,6 +85,30 @@ class MiddlePageMenu {
   }
   getYourOrderHasBeenProccessedStatus() {
     return cy.get(".maintext").contains("Your Order Has Been Processed!");
+  }
+  getMenuText(){
+    return cy.contains('.contentpanel .welcome_msg h4', 'Welcome to the Automation Test Store!');
+  }
+  getApparealAccessoriesText(){
+    return cy.get(".maintext").contains("Apparel & accessories");
+  }
+  getMakeupText(){
+    return cy.get(".maintext").contains("Makeup");
+  }
+  getSkinCareText(){
+    return cy.get(".maintext").contains("Skincare");
+  }
+  getFragranceText(){
+    return cy.get(".maintext").contains("Fragrance");
+  }
+  getMenuText(){
+    return cy.get(".maintext").contains("Men");
+  }
+  getHairCareText(){
+    return cy.get(".maintext").contains("Hair Care");
+  }
+  getBooksText(){
+    return cy.get(".maintext").contains("Books");
   }
 }
 export default new MiddlePageMenu();

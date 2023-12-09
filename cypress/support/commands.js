@@ -54,7 +54,7 @@ Cypress.Commands.add('register',() => {
     middlePageMenu.getRegisterAccountContinueBtn().click();
     cy.get(".maintext").should("contain"," Your Account Has Been Created!")
     });
-//
+//https://automationteststore.com/
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
