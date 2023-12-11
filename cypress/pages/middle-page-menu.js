@@ -86,29 +86,47 @@ class MiddlePageMenu {
   getYourOrderHasBeenProccessedStatus() {
     return cy.get(".maintext").contains("Your Order Has Been Processed!");
   }
-  getMenuText(){
-    return cy.contains('.contentpanel .welcome_msg h4', 'Welcome to the Automation Test Store!');
+  getMenuText() {
+    return cy.contains(
+      ".contentpanel .welcome_msg h4",
+      "Welcome to the Automation Test Store!"
+    );
   }
-  getApparealAccessoriesText(){
+  getApparealAccessoriesText() {
     return cy.get(".maintext").contains("Apparel & accessories");
   }
-  getMakeupText(){
+  getMakeupText() {
     return cy.get(".maintext").contains("Makeup");
   }
-  getSkinCareText(){
+  getSkinCareText() {
     return cy.get(".maintext").contains("Skincare");
   }
-  getFragranceText(){
+  getFragranceText() {
     return cy.get(".maintext").contains("Fragrance");
   }
-  getMenuText(){
+  getMenuText() {
     return cy.get(".maintext").contains("Men");
   }
-  getHairCareText(){
+  getHairCareText() {
     return cy.get(".maintext").contains("Hair Care");
   }
-  getBooksText(){
+  getBooksText() {
     return cy.get(".maintext").contains("Books");
+  }
+  getAccountLoginStatus() {
+    return cy.get(".maintext").contains("Account");
+  }
+  getOrderDetailsStatus() {
+    return cy.get(".maintext").contains("Order Details");
+  }
+  getShoppingCartStatus() {
+    return cy.get(".maintext").contains("Shopping Cart");
+  }
+  getSpcialOffersStatus() {
+    return cy.get(".maintext").contains("Special Offers");
+  }
+  getShoppingCartStatus() {
+    return cy.get(".maintext").contains("Shopping Cart");
   }
 }
 export default new MiddlePageMenu();
