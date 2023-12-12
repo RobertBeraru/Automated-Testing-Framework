@@ -42,8 +42,19 @@ class dropDownMenus {
     return cy.get("ul#main_menu > li:nth-child(4) > a");
   }
   getShoesBtn() {
-    return cy.get ("div[class='subcategories'] li[class='current'] a")
+    return cy.get (".nav-pills.categorymenu > li:nth-child(2) > div[class='subcategories'] > ul > li:nth-child(1) > a");
   }
-
+  getTShirtsBtn(){
+    return cy.get (".nav-pills.categorymenu > li:nth-child(2) > div[class='subcategories'] > ul > li:nth-child(2) > a")
+  }
+  getMakeupTabBtn(tabNumber){
+    return cy.get(`.nav-pills.categorymenu > li:nth-child(3) > div[class='subcategories'] > ul > li:nth-child(${tabNumber}) > a`)
+  }
+  getSkincareTabBtn(tabNumber){
+    return cy.get(`.nav-pills.categorymenu > li:nth-child(4) > div[class='subcategories'] > ul > li:nth-child(${tabNumber}) > a`)
+  }
+  getDropdownMenuTabBtn(dropdownTabNumber, tabNumber){
+    return cy.get(`.nav-pills.categorymenu > li:nth-child(${dropdownTabNumber}) > div[class='subcategories'] > ul > li:nth-child(${tabNumber}) > a`)
+  }
 }
 export default new dropDownMenus();

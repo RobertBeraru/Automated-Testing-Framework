@@ -48,7 +48,7 @@ class MiddlePageMenu {
     return cy.get("#AccountFrm_country_id.form-control");
   }
   getLoginNameField() {
-    return cy.get("#AccountFrm_baseURLloginname");
+    return cy.get("#AccountFrm_loginname");
   }
   getPasswordField() {
     return cy.get("#AccountFrm_password");
@@ -127,6 +127,33 @@ class MiddlePageMenu {
   }
   getShoppingCartStatus() {
     return cy.get(".maintext").contains("Shopping Cart");
+  }
+  getShoesStatus(){
+    return cy.get(".maintext").contains("Shoes");
+  }
+  getTShirtsStatus(){
+    return cy.get(".maintext").contains("T-shirts");
+  }
+  getCheeksStatus(){
+    return cy.get(".maintext").contains("Cheeks");
+  }
+  getEyesStatus(){
+    return cy.get(".maintext").contains("Eyes");
+  }
+  getFaceStatus(){
+    return cy.get(".maintext").contains("Face");
+  }
+  getLipsStatus(){
+    return cy.get(".maintext").contains("Lips");
+  }
+  getNailsStatus(){
+    return cy.get(".maintext").contains("Nails");
+  }
+  getValueSetsStatus(){
+    return cy.get(".maintext").contains("Value Sets");
+  }
+  getValidationOnText(text){
+    return cy.get(".maintext").contains(`${text}`)
   }
 }
 export default new MiddlePageMenu();
